@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect, useState } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
@@ -94,7 +93,7 @@ const Repository: React.FC = () => {
       )}
 
       <Issues>
-        {issues.map((issue) => (
+        {issues.map(issue => (
           <a key={issue.id} href={issue.html_url}>
             <div>
               <strong>{issue.title}</strong>
